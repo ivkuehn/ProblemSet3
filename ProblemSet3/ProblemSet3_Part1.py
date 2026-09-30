@@ -27,4 +27,24 @@ for file in data_list:
     print(windows_path)
     full_path.append(windows_path)
     
+# %% Task 3
+
+user_numbers = []
+
+for i in range(3):
+    value = int(input("Enter an integer: "))
+    user_numbers.append(value)
+    user_numbers.sort()
+    print(user_numbers[-1])
+
+
+# %% Task 3- Challenge
+
+user_numbers = []
+
+for i in range(3):
+    value = int(input("Enter an integer: "))
+    user_numbers.append(value)
+    user_numbers.sort(reverse=True)
+    print(user_numbers)
 # %%
