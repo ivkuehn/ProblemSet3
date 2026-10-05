@@ -11,3 +11,18 @@ header_line = line_list[0]
 
 #Print the contents of the headerLine
 print(header_line)
+
+#%% Task 4.2
+
+#Split the headerLineString into a list of header items
+header_items = header_line.split(',')
+
+#List the index of the mmsi, shipname, and fleet_name values
+mmsi_idx = header_items.index("mmsi")
+name_idx = header_items.index("shipname")
+fleet_idx = header_items.index("fleet_name")
+
+#Print the values
+print(mmsi_idx,name_idx,fleet_idx)
+
+# %%
