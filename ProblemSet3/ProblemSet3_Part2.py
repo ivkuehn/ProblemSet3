@@ -25,4 +25,18 @@ fleet_idx = header_items.index("fleet_name")
 #Print the values
 print(mmsi_idx,name_idx,fleet_idx)
 
-# %%
+#%% Task 4.3
+#Create an empty dictionary
+vessel_dict = {}
+
+#Iterate through all lines (except the header) in the data file:
+for line_list[1:]:
+
+#Split the data into values
+█
+#Extract the mmsi value from the list using the mmsi_idx value
+mmsi = █
+#Extract the fleet value
+fleet = █
+#Adds info to the vesselDict dictionary
+█
