@@ -100,3 +100,5 @@ for event in loitering_list[1:]:
         #print('No vessels met criteria.')
 
 # Else statements were commented out to clean up output and clearly view vessels that met both conditions
+
+# %%
