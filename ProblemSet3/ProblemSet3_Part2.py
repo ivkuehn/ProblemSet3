@@ -26,22 +26,30 @@ fleet_idx = header_items.index("fleet_name")
 print(mmsi_idx,name_idx,fleet_idx)
 
 #%% Task 4.3
+
 #Create an empty dictionary
 vessel_dict = {}
 
 #Iterate through all lines (except the header) in the data file:
 for line in line_list[1:]:
-
     #Split the data into values
     line_data = line.split(',')
-
     #Extract the mmsi value from the list using the mmsi_idx value
     mmsi = line_data[mmsi_idx]
-
     #Extract the fleet value
     fleet = line_data[fleet_idx]
-
     #Adds info to the vesselDict dictionary
     vessel_dict[mmsi] = fleet
+
+# %% Task 4.4
+
+# Assign vesselID to string value
+vesselID = '312887000'
+
+# Use dictionary made in 4.3 to extract fleet value at the vesselID mmsi value
+fleetID = vessel_dict[vesselID]
+
+# Print the required statement
+print(f'Vessel # {vesselID} flies the flag of {fleetID}')
 
 # %%
