@@ -19,9 +19,13 @@ print ("is " + str(elevation) + "' above sea level." )
 data_folder = "W:/859_data/triangle"
 data_list = ["streams.shp", "stream_types.csv", "naip_imagery.tif"]
 user_item = "roads.shp"
+# Add user_item to data_list
 data_list.append(user_item)
+
+# Create empty list
 full_path = []
 
+# Create for loop that creates list of full path names
 for file in data_list:
     windows_path = data_folder + "/" + file
     print(windows_path)
@@ -31,6 +35,8 @@ for file in data_list:
 
 user_numbers = []
 
+# Create for loop that adds user input and sorts values in ascending order
+# Print only the last item in the user_numbers list
 for i in range(3):
     value = int(input("Enter an integer: "))
     user_numbers.append(value)
@@ -40,6 +46,8 @@ for i in range(3):
 
 # %% Task 3- Challenge
 
+# Repeat task 3 but sort values in descending order
+# Print all items in user_numbers list
 user_numbers = []
 
 for i in range(3):
