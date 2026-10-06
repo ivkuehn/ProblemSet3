@@ -1,3 +1,7 @@
+# Author: Isabelle Kuehn
+# Assignment Due Date: 10/07/2026
+# ENV 859
+
 #%% Task 4.1 
 
 #Create a Python file object, i.e., a link to the file's contents
