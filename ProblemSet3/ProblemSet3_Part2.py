@@ -30,13 +30,18 @@ print(mmsi_idx,name_idx,fleet_idx)
 vessel_dict = {}
 
 #Iterate through all lines (except the header) in the data file:
-for line_list[1:]:
+for line in line_list[1:]:
 
-#Split the data into values
-█
-#Extract the mmsi value from the list using the mmsi_idx value
-mmsi = █
-#Extract the fleet value
-fleet = █
-#Adds info to the vesselDict dictionary
-█
+    #Split the data into values
+    line_data = line.split(',')
+
+    #Extract the mmsi value from the list using the mmsi_idx value
+    mmsi = line_data[mmsi_idx]
+
+    #Extract the fleet value
+    fleet = line_data[fleet_idx]
+
+    #Adds info to the vesselDict dictionary
+    vessel_dict[mmsi] = fleet
+
+# %%
